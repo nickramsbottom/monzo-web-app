@@ -1,0 +1,155 @@
+// dropdown menus taken from https://designshack.net/articles/navigation/verticalaccordionav/
+// min-width: 0 on col 2 explanation https://css-tricks.com/flexbox-truncated-text/
+
+.main {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+
+  body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+  }
+
+  p {
+    margin: 0;
+  }
+
+  .content-flex-container {
+    display: flex;
+    min-height: 100vh;
+  }
+
+  .col1 {
+    flex: 1;
+    flex-grow: 1;
+    background-color: $bkgrd-blue;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .col2 {
+    flex: 6;
+    flex-grow: 6;
+    background-color: $white;
+    padding: 0 25px;
+    min-width: 0;
+  }
+
+  .micon {
+    align-self: center;
+    padding: 20px 0;
+  }
+
+  .plot-flex-container {
+    display: flex;
+  }
+
+  .amountPlot {
+    flex: 1;
+    overflow: hidden;
+  }
+
+  .piePlot {
+    flex: 1;
+    overflow: hidden;
+  }
+
+  .linePlot {
+    flex: 1;
+    overflow: auto;
+    width: 50%;
+  }
+
+  .tablePlot {
+    flex: 1;
+    overflow: auto;
+    width: 50%;
+  }
+
+  #subMenu {
+    margin: 0;
+    padding: 0;
+  }
+
+  h1 {
+    color: $bkgrd-blue;
+    font-family: Helvetica;
+    font-size: 50px;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: 400;
+    text-align: center;
+  }
+
+  img {
+    width: 100%;
+    max-width: 250px;
+    vertical-align: middle;
+  }
+
+  .menu-item {
+    width: 100%;
+
+    h4 {
+      display: block;
+      font-size: 25px;
+      font-weight: 300;
+      margin: 0;
+
+      a {
+        color: $white;
+        display: block;
+        padding-bottom: 6px;
+        padding-left: 25px;
+        padding-top: 6px;
+        text-decoration: none;
+        width: 100%;
+
+        &:hover {
+          background: $hghlt-blue;
+        }
+      }
+
+    }
+
+    ul {
+      background: $bkgrd-blue;
+      display: none;
+      font-size: 18px;
+      list-style-type: none;
+      overflow: hidden;
+      padding: 0;
+
+      a {
+        color: $hghlt-gray;
+        display: block;
+        padding-bottom: 2px;
+        padding-left: 40px;
+        padding-top: 2px;
+        text-decoration: none;
+        width: 100%;
+      }
+
+    }
+
+    li {
+      &:hover {
+        background: $hghlt-blue;
+      }
+    }
+  }
+
+  table,
+  th,
+  td {
+    border: 1px solid $bkgrd-blue;
+    color: $bkgrd-blue;
+  }
+
+  th,
+  td {
+    padding: 10px;
+  }
+}

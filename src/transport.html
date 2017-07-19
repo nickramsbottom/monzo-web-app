@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en" class="main">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Monzo Web App | Travel Spending Summary</title>
+  <link rel="stylesheet" href="css/bundle.css">
+</head>
+
+<body onload="accountIdTransport()">
+  <div class="content-flex-container">
+    <div class="col1">
+      <div class="micon">
+        <a href="yourdata.html"><img src="assets/images/m.png"></a>
+      </div>
+      <div class="menu js-menu">
+        <!-- see api.js for iife populating this div -->
+      </div>
+    </div>
+    <div class="col2">
+      <div class="content">
+        <h1 class="text-center">Travel Spending Summary</h1>
+        <div class="plot-flex-container">
+          <div class="linePlot">
+            <canvas id="catLine"></canvas>
+          </div>
+          <div class="tablePlot">
+            <table id="tableSummary"></table>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="./js/vendor.bundle.js"></script>
+    <script src="./js/bundle-yourdata.js"></script>
+</body>
+
+</html>

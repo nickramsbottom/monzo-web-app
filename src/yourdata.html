@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en" class="main">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Monzo Web App | Your Summary</title>
+  <link rel="stylesheet" href="css/bundle.css">
+</head>
+
+<body onload="accountIdData()">
+  <div class="content-flex-container">
+    <div class="col1">
+      <div class="micon">
+        <a href="yourdata.html"><img src="assets/images/m.png"></a>
+      </div>
+      <div class="menu js-menu">
+      <!-- see api.js for iife populating this div -->
+      </div>
+    </div>
+    <div class="col2">
+      <h1 class="text-center">Your Spending Summary</h1>
+      <div class="plot-flex-container">
+        <div class="amountPlot">
+          <canvas id="line" width="175" height="100"></canvas>
+        </div>
+        <div class="piePlot">
+          <canvas id="pie" width="175" height="100"></canvas>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="./js/vendor.bundle.js"></script>
+  <script src="./js/bundle-yourdata.js"></script>
+</body>
+
+</html>

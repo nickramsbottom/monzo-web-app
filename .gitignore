@@ -1,0 +1,6 @@
+.DS_Store
+.sass-cache/
+node_modules/
+src/js/const.js
+build/
+static/
