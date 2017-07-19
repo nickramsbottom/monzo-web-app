@@ -11,9 +11,9 @@ const path = require('path');
 module.exports = {
   context: path.join(__dirname, '/src/js'),
   entry: {
-    land: './pages/index.js',
+    index: './pages/index.js',
     int: './pages/int.js',
-    yourdata: './functionality/api.js',
+    yourdata: './pages/yourdata.js',
     vendor: ['chart.js'],
   },
   output: {
