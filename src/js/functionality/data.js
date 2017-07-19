@@ -1,4 +1,4 @@
-import { pieChart, lineChart } from '../functionality/chart.config';
+import { pieChart, lineChart } from './chart.config';
 import { toggleMenu } from '../const';
 
 /* eslint-disable no-param-reassign */

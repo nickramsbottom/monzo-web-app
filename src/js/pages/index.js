@@ -1,6 +1,6 @@
 import { clientData } from '../const';
 
-require('../../scss/index.scss');
+require('../../scss/app.scss');
 
 const land = function () {
   const link = `https://auth.getmondo.co.uk/?client_id=${clientData.clientId}&redirect_uri=${clientData.redirectURI}&response_type=code`;

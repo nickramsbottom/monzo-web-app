@@ -1,6 +1,6 @@
-import { processCategory } from '../pages/category';
-import { processData } from '../pages/data';
-import { menu } from './menu';
+import { processCategory } from '../functionality/category';
+import { processData } from '../functionality/data';
+import { menu } from '../functionality/menu';
 
 function apiCall(url, cb, obj) {
   const xhr = new XMLHttpRequest();

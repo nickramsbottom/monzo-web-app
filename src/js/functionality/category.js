@@ -1,4 +1,4 @@
-import { lineChart } from '../functionality/chart.config';
+import { lineChart } from './chart.config';
 import { toggleMenu } from '../const';
 
 function makeTable(data) {
