@@ -8,7 +8,7 @@ Make sure you have node with [yarn](https://yarnpkg.com/lang/en/docs/install/) o
 
 In the root directory run `yarn`.
 
-Register a client at[this page](https://developers.monzo.com/apps/home) with the redirect URL set to `http://localhost:3000/int.html`. Note your clientId and clientSecret.
+Register a client at [this page](https://developers.monzo.com/apps/home) with the redirect URL set to `http://localhost:3000/int.html`. Note your clientId and clientSecret.
 
 Open `/src/js/const.example.js` and add your Id and Secret from the previous step.
 
