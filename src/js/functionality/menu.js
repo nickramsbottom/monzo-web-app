@@ -22,4 +22,13 @@ function menu() {
   return content;
 }
 
-export { menu };
+function toggleMenu() {
+  const x = document.getElementById('subMenu');
+  if (x.style.display === 'block') {
+    x.style.display = 'none';
+  } else {
+    x.style.display = 'block';
+  }
+}
+
+export { menu, toggleMenu };

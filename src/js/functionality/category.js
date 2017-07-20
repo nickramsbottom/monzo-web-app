@@ -1,6 +1,12 @@
 import { lineChart } from './chart.config';
 import { toggleMenu } from '../const';
 
+function containsValueArr(currentDate) {
+  return function (element) {
+    return element === currentDate;
+  };
+}
+
 function makeTable(data) {
   let rows = '<tr><th>Date</th><th>Merchant</th><th>Amount/£</th></tr>';
   for (let i = 0; i < data[0].length; i += 1) {

@@ -14,6 +14,7 @@ module.exports = {
     index: './pages/index.js',
     int: './pages/int.js',
     yourdata: './pages/yourdata.js',
+    category: './pages/category.js',
     vendor: ['chart.js'],
   },
   output: {
