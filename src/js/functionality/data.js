@@ -1,5 +1,4 @@
 import { pieChart, lineChart } from './chart.config';
-import { toggleMenu } from '../const';
 
 /* eslint-disable no-param-reassign */
 // outputs array of arrays
@@ -56,6 +55,7 @@ function totalCatArr(arr) {
 }
 
 function processData(obj) {
+  console.log('3');
 //  const table = document.getElementById('tableSummary');
   const dayArray = totalDayArr(obj.transactions);
 //  makeTable(null, table);
@@ -65,6 +65,4 @@ function processData(obj) {
   pieChart(catArray);
 }
 
-window.toggleMenu = toggleMenu;
-
-export { processData };
+export default processData;

@@ -1,4 +1,4 @@
-import { processCategory } from '../functionality/category';
+import processCategory from '../functionality/category';
 import { menu, toggleMenu } from '../functionality/menu';
 import apiCall from '../functionality/api';
 

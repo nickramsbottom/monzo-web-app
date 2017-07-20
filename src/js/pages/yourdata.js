@@ -1,4 +1,4 @@
-import { processData } from '../functionality/data';
+import processData from '../functionality/data';
 import { menu, toggleMenu } from '../functionality/menu';
 import apiCall from '../functionality/api';
 
