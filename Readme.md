@@ -1,6 +1,6 @@
 # Monzo Web App
 
-This is a web app leveraging the [monzo api](https://monzo.com/docs/).
+This is a web app leveraging the [monzo API](https://monzo.com/docs/).
 
 ## Initial local steps
 
