@@ -1,5 +1,10 @@
 import { lineChart } from './chart.config';
-import { toggleMenu } from '../const';
+
+function containsValueArr(currentDate) {
+  return function (element) {
+    return element === currentDate;
+  };
+}
 
 function makeTable(data) {
   let rows = '<tr><th>Date</th><th>Merchant</th><th>Amount/£</th></tr>';
@@ -51,6 +56,7 @@ function categorySum(arr, cat) {
       }
     }
   }
+  return seen;
 }
 
 function processCategory(obj) {
@@ -61,6 +67,4 @@ function processCategory(obj) {
   lineChart(fullData[0], fullData[2], chartElt);
 }
 
-window.toggleMenu = toggleMenu;
-
-export { processCategory };
+export default processCategory;
